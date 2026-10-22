@@ -274,6 +274,11 @@ footer a{color:white;text-decoration:underline}
  .hero-top{min-height:0}.hero-bg{width:70%;bottom:auto;height:380px;opacity:.5}.hero-top .hero-copy{padding:30px 0 24px}
  .hero h1{max-width:none}.partners-img{border-radius:12px}.form-section{padding:30px 0 40px}
 }
+.program-tile{flex-direction:column;gap:6px}
+.program-tile small b{font-weight:900}
+.program-tile small{font-size:10.5px;font-weight:700;color:var(--orange);letter-spacing:0}
+.rank-heading{text-align:center;margin:0 auto 30px}
+.rank-heading h2{margin:0;font-size:clamp(28px,3.8vw,42px);line-height:1.1;letter-spacing:-.04em;font-weight:900}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
@@ -317,7 +322,7 @@ footer a{color:white;text-decoration:underline}
     <div class="phone-row"><span class="cc">+91 <small aria-hidden="true">&#9662;</small></span><input class="field" type="tel" name="mobile" placeholder="Enter Mobile Number *" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel-national"></div>
     <input class="field" type="text" name="otp" placeholder="Enter OTP" inputmode="numeric" maxlength="6" autocomplete="one-time-code">
     <select class="field" name="state" required><option value="" selected disabled>Select State *</option><option>Andaman &amp; Nicobar Islands</option><option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chandigarh</option><option>Chhattisgarh</option><option>Dadra &amp; Nagar Haveli and Daman &amp; Diu</option><option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jammu &amp; Kashmir</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Ladakh</option><option>Lakshadweep</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Puducherry</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option></select>
-    <select class="field" name="programme" required><option value="" selected disabled>Select Programme *</option><option>MBA</option><option>MCA</option><option>M.Sc Mathematics</option><option>M.Sc Economics</option><option>M.Com</option><option>M.A English</option><option>M.A Political Science</option><option>M.A History</option><option>M.A Sociology</option></select>
+    <select class="field" name="programme" required><option value="" selected disabled>Select Programme *</option><option>MBA</option><option>MCA</option><option>M.Sc Data Science</option><option>M.Sc Mathematics</option><option>M.Sc Economics</option><option>M.Com</option><option>M.A English</option><option>M.A Political Science</option><option>M.A History</option><option>M.A Sociology</option></select>
     <select class="field" name="defence" required><option value="" selected disabled>Are You An Active Defence Personnel ? *</option><option>No</option><option>Yes</option></select>
     <label class="consent"><input type="checkbox" name="consent" checked required><span>I authorize LPU to contact me with updates/ notifications via Email/ SMS/ Whatsapp/ Call, which overrides DND/NDNC registration. *</span></label>
     <button class="lead-submit" type="submit">SUBMIT</button>
@@ -334,15 +339,16 @@ footer a{color:white;text-decoration:underline}
    <p class="program-note">Programme availability and specialisations can change by intake. Please verify current options with LPU Online.</p>
   </div>
   <div class="program-grid" aria-label="Master's programme names">
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">MBA</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">MCA</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">M.Sc Mathematics</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">M.Sc Economics</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">M.Com</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">M.A English</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">M.A Political Science</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">M.A History</a>
-   <a class="program-tile" href="thankyoupage.html" data-cta="1">M.A Sociology</a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>MBA</span><small>No Cost EMI starting at <b>&#8377;6,733/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>MCA</span><small>No Cost EMI starting at <b>&#8377;5,400/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.Sc Data Science</span><small>No Cost EMI starting at <b>&#8377;5,400/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.Sc Mathematics</span><small>No Cost EMI starting at <b>&#8377;3,400/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.Sc Economics</span><small>No Cost EMI starting at <b>&#8377;3,400/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.Com</span><small>No Cost EMI starting at <b>&#8377;3,400/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.A English</span><small>No Cost EMI starting at <b>&#8377;3,644/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.A Political Science</span><small>No Cost EMI starting at <b>&#8377;3,644/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.A History</span><small>No Cost EMI starting at <b>&#8377;3,644/month</b>*</small></a>
+   <a class="program-tile" href="thankyoupage.html" data-cta="1"><span>M.A Sociology</span><small>No Cost EMI starting at <b>&#8377;3,644/month</b>*</small></a>
   </div>
  </div>
 </section>
@@ -372,6 +378,7 @@ footer a{color:white;text-decoration:underline}
 
 <section class="section" id="recognition">
  <div class="wrap naac-wrap">
+  <div class="rank-heading"><h2>Ranking and Recognitions</h2></div>
   <div class="naac-card">
    <div class="car" data-carousel data-autoplay="4500" aria-roledescription="carousel" aria-label="University credentials">
     <div class="car-track"><div class="car-slide"><p>Lovely Professional University is awarded <b>NAAC A++</b> with a score of <b>3.68 out of 4</b> among dual-mode universities (Government and Private).</p></div><div class="car-slide"><p>LPU Online programmes carry <b>UGC-DEB</b> online programme entitlement.*</p></div><div class="car-slide"><p><b>AICTE</b> approval for Online MBA &amp; MCA, as stated by LPU Online.</p></div><div class="car-slide"><p>Review the current <b>WES</b> credential and <b>ranking</b> details on the official LPU Online site.</p></div><div class="car-slide"><p><b>2,225+</b> recruiters hired LPU students*</p></div><div class="car-slide"><p><b>3K+</b> research publications*</p></div><div class="car-slide"><p><b>56</b> faculty among the world&rsquo;s top 2% scientists*</p></div><div class="car-slide"><p><b>400+</b> tie-ups worldwide*</p></div></div>
